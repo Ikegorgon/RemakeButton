@@ -11,8 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var Button1: UIButton!
+    var int = 0
     @IBAction func Color (_ sender: UIButton) {
-        var int = 0
         let rand :UIColor
         let redValue : CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
         let greenValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
@@ -25,7 +25,20 @@ class ViewController: UIViewController {
             Button1.backgroundColor = .purple
         }
         view.backgroundColor = rand
+        Button1.titleLabel?.textColor = .blue
+        Button2.titleLabel?.textColor = .white
     }
+    
+    @IBOutlet weak var Button2: UIButton!
+    @IBAction func NoNo (_ sender: UIButton) {
+        Button1.backgroundColor = .black
+        Button2.backgroundColor = .black
+        view.backgroundColor = .black
+        Button1.titleLabel?.textColor = .black
+        Button2.titleLabel?.textColor = .black
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
