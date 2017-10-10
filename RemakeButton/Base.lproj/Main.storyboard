@@ -20,9 +20,21 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvZ-Ci-ey0">
                                 <rect key="frame" x="139" y="295" width="97" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Push Me"/>
+                                <state key="normal" title="Push Me">
+                                    <color key="titleColor" red="0.0" green="0.13124972751830288" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="Color:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jE9-QG-tcA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ab-zR-0IK">
+                                <rect key="frame" x="118" y="617" width="139" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Don't Push Me...">
+                                    <color key="titleColor" red="0.97684727837977481" green="1" blue="0.97217147879026122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="NoNo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5RF-43-hum"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -31,6 +43,7 @@
                     </view>
                     <connections>
                         <outlet property="Button1" destination="wvZ-Ci-ey0" id="PeR-RL-Ska"/>
+                        <outlet property="Button2" destination="2ab-zR-0IK" id="fPr-wo-gU2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
