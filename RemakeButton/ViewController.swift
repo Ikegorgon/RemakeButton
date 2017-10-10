@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var Label: UILabel!
     @IBOutlet weak var Button1: UIButton!
     var int = 0
     @IBAction func Color (_ sender: UIButton) {
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
         Button1.titleLabel?.textColor = .blue
         Button2.titleLabel?.textColor = .white
         Button2.backgroundColor = rand
+        Label.textColor = rand
     }
     
     @IBOutlet weak var Button2: UIButton!
@@ -36,7 +38,8 @@ class ViewController: UIViewController {
         Button2.backgroundColor = .black
         view.backgroundColor = .black
         Button1.titleLabel?.textColor = .black
-        Button2.titleLabel?.textColor = .black
+        Button2.setTitleColor(.black, for: .normal)
+        Label.textColor = .white
     }
     
     
