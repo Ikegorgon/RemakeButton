@@ -37,6 +37,13 @@
                                     <action selector="NoNo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5RF-43-hum"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOU LOSE!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaQ-eN-6Gf">
+                                <rect key="frame" x="12" y="114" width="350" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="0.98323467376950402" green="1" blue="0.99661024074518367" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +51,7 @@
                     <connections>
                         <outlet property="Button1" destination="wvZ-Ci-ey0" id="PeR-RL-Ska"/>
                         <outlet property="Button2" destination="2ab-zR-0IK" id="fPr-wo-gU2"/>
+                        <outlet property="Label" destination="XaQ-eN-6Gf" id="C9t-1H-Zut"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
