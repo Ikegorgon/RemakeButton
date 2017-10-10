@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         view.backgroundColor = rand
         Button1.titleLabel?.textColor = .blue
         Button2.titleLabel?.textColor = .white
+        Button2.backgroundColor = rand
     }
     
     @IBOutlet weak var Button2: UIButton!
