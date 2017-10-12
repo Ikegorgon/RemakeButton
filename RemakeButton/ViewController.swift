@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Button1: UIButton!
     var int = 0
     @IBAction func Color (_ sender: UIButton) {
-        var color = RandColor()
+        let color = RandColor()
         int += 1
         if (int % 2 == 1) {
             Button1.backgroundColor = .green
