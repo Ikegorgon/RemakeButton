@@ -44,17 +44,58 @@
                                 <color key="textColor" red="0.98323467376950402" green="1" blue="0.99661024074518367" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="EV1-tf-rzo">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Purple" id="Ojf-nr-Lpi">
+                                        <connections>
+                                            <action selector="SetPurple:" destination="BYZ-38-t0r" id="ZFC-xx-YjW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Reset" id="poD-60-gTu">
+                                        <connections>
+                                            <action selector="SetReset:" destination="BYZ-38-t0r" id="Yzz-le-fON"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Random" id="dWc-QT-bWM">
+                                        <connections>
+                                            <action selector="SetRandom:" destination="BYZ-38-t0r" id="lGw-gK-4ux"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Clear" id="aKk-qA-NJ5">
+                                        <connections>
+                                            <action selector="SetClear:" destination="BYZ-38-t0r" id="eLO-pH-iWr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="BREAK :(" id="uye-IV-jO2">
+                                        <connections>
+                                            <action selector="SetBreak:" destination="BYZ-38-t0r" id="5Te-mE-9hn"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zpP-CX-2iv" appends="YES" id="mUB-XK-iOD"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="Break" destination="uye-IV-jO2" id="LGx-6U-bie"/>
                         <outlet property="Button1" destination="wvZ-Ci-ey0" id="PeR-RL-Ska"/>
                         <outlet property="Button2" destination="2ab-zR-0IK" id="fPr-wo-gU2"/>
+                        <outlet property="Clear" destination="aKk-qA-NJ5" id="P22-lc-fkb"/>
                         <outlet property="Label" destination="XaQ-eN-6Gf" id="C9t-1H-Zut"/>
+                        <outlet property="Purple" destination="Ojf-nr-Lpi" id="ev3-gr-RL7"/>
+                        <outlet property="Random" destination="dWc-QT-bWM" id="pmU-h4-BM2"/>
+                        <outlet property="Reset" destination="poD-60-gTu" id="0o0-C4-VWT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="zpP-CX-2iv"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
